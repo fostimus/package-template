@@ -39,6 +39,9 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/eslint-parser": "^7.24.5",
+    "@babel/preset-react": "^7.24.1",
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.4.12",
     "chokidar": "^3.6.0",
@@ -56,6 +59,8 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-svg-jsx": "^1.2.4",
+    "husky": "^8.0.0",
+    "lint-staged": "^12.2.1",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5"
   }

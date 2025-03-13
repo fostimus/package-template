@@ -8,3 +8,7 @@ When creating a new repository on GitHub, you can use this template to get start
 2. run `yarn install` to install the dependencies
 3. add your project's dependencies
 4. profit
+
+## TODO
+
+- add devex for updating dependencies to see if/when we should update dependencies
