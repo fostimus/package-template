@@ -1,0 +1,21 @@
+{
+  "module": {
+    "type": "commonjs"
+  },
+  "minify": true,
+  "jsc": {
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": true,
+      "dynamicImport": true,
+      "functionBind": true,
+      "classPrivateProperty": true,
+      "exportDefaultFrom": true
+    },
+    "transform": {
+      "react": {
+        "runtime": "automatic"
+      }
+    }
+  }
+}
