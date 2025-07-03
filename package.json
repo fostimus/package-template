@@ -1,25 +1,18 @@
 {
-  "name": "package-template",
+  "name": "package-ops",
   "version": "0.0.0",
-  "description": "Base template for new packages",
-  "repository": "git@github.com:fostimus/package-template.git",
+  "description": "Set up a new Node package with all the goodies and ready to be exported/imported to any project.",
+  "repository": "git@github.com:fostimus/package-ops.git",
   "author": "Derek Foster <derekfoster94@gmail.com>",
   "license": "MIT",
-  // remove this publishConfig if going to publish in NPM
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  // the main entry point for the package - when you import the package, e.g.
-  // import thing, { otherThing } from 'package-template'
   "main": "dist/index.js",
-  // other entry points for the package - when you import the package, e.g.
-  // import { thing, otherThing } from 'package-template/something'
   "exports": {
     "./something": "./dist/something/index.js",
     "./something/*": "./dist/usage/*.js"
   },
-  // files to include in the package. you won't be able to import files from the package
-  // without adding them here.
   "files": [
     "dist/**"
   ],
@@ -36,20 +29,19 @@
     "lint:quiet:fix": "yarn lint:quiet --fix"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
-    "dotenv": "16.4.7"
+    "dotenv": "17.0.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.5",
-    "@babel/eslint-parser": "^7.24.5",
-    "@swc/cli": "^0.3.12",
-    "@swc/core": "^1.4.12",
+    "@babel/core": "^7.28.0",
+    "@babel/eslint-parser": "^7.28.0",
+    "@swc/cli": "^0.7.7",
+    "@swc/core": "^1.12.9",
     "@swc/register": "0.1.10",
     "app-module-path": "^2.1.0",
     "bdd-lazy-var": "^2.6.1",
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
-    "chokidar": "^3.6.0",
     "eslint": "^8.57.0",
     "eslint-config-nicenice": "^4.1.1",
     "eslint-config-prettier": "^9.1.0",
@@ -63,13 +55,12 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-svg-jsx": "^1.2.4",
-    "husky": "^8.0.0",
-    "lint-staged": "^12.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "mocha": "^9.2.2",
     "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
+    "rimraf": "^6.0.1",
     "sinon": "^12.0.1",
     "sinon-chai": "^3.5.0"
   }
