@@ -5,16 +5,17 @@
   "repository": "git@github.com:fostimus/package-ops.git",
   "author": "Derek Foster <derekfoster94@gmail.com>",
   "license": "MIT",
+  "type": "commonjs",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "main": "dist/index.js",
-  "exports": {
-    "./something": "./dist/something/index.js",
-    "./something/*": "./dist/usage/*.js"
+  "bin": {
+    "release": "./scripts/release.js"
   },
   "files": [
-    "dist/**"
+    "config/**",
+    "scripts/**"
   ],
   "scripts": {
     "build": "swc src -d dist --strip-leading-paths",
@@ -23,18 +24,16 @@
     "clean:build": "yarn clean && yarn build",
     "prepack": "yarn clean:build",
     "format": "prettier --write 'src/**/*.js'",
-    "lint": "eslint 'src/**/*.js' 'gatsby-node.esm.js' 'gatsby-config.esm.js'",
+    "lint": "eslint 'scripts/**/*.js'",
     "lint:fix": "yarn lint --fix",
     "lint:quiet": "NODE_ENV=test yarn lint --quiet",
-    "lint:quiet:fix": "yarn lint:quiet --fix"
-  },
-  "dependencies": {
-    "dotenv": "17.0.1",
-    "lodash": "^4.17.21"
+    "lint:quiet:fix": "yarn lint:quiet --fix",
+    "release": "release-it"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
     "@babel/eslint-parser": "^7.28.0",
+    "@release-it/conventional-changelog": "^10.0.1",
     "@swc/cli": "^0.7.7",
     "@swc/core": "^1.12.9",
     "@swc/register": "0.1.10",
@@ -55,11 +54,14 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "7.37.5",
     "eslint-plugin-svg-jsx": "^1.2.4",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
+    "lodash": "^4.17.21",
     "mocha": "^9.2.2",
     "prettier": "^3.2.5",
+    "release-it": "^19.0.3",
     "rimraf": "^6.0.1",
     "sinon": "^12.0.1",
     "sinon-chai": "^3.5.0"
