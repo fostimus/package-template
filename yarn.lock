@@ -15,6 +15,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@anvilco-pkg/package-ops@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@anvilco-pkg/package-ops@workspace:."
+  dependencies:
+    "@babel/core": ^7.28.0
+    "@babel/eslint-parser": ^7.28.0
+    "@release-it/conventional-changelog": ^10.0.1
+    "@swc/cli": ^0.7.7
+    "@swc/core": ^1.12.9
+    "@swc/register": 0.1.10
+    app-module-path: ^2.1.0
+    bdd-lazy-var: ^2.6.1
+    chai: ^4.3.6
+    chai-as-promised: ^7.1.1
+    eslint: ^8.57.0
+    eslint-config-nicenice: ^4.1.1
+    eslint-config-prettier: ^9.1.0
+    eslint-config-standard: ^17.1.0
+    eslint-config-standard-jsx: ^11.0.0
+    eslint-import-resolver-alias: ^1.1.2
+    eslint-plugin-import: ^2.29.1
+    eslint-plugin-mocha: ^10.4.1
+    eslint-plugin-n: ^16.6.2
+    eslint-plugin-no-only-tests: ^3.1.0
+    eslint-plugin-node: ^11.1.0
+    eslint-plugin-prettier: ^5.1.3
+    eslint-plugin-promise: ^6.1.1
+    eslint-plugin-react: 7.37.5
+    eslint-plugin-svg-jsx: ^1.2.4
+    husky: ^9.1.7
+    lint-staged: ^16.1.2
+    lodash: ^4.17.21
+    mocha: ^9.2.2
+    prettier: ^3.2.5
+    release-it: ^19.0.3
+    rimraf: ^6.0.1
+    sinon: ^12.0.1
+    sinon-chai: ^3.5.0
+  bin:
+    release: ./scripts/release.js
+  languageName: unknown
+  linkType: soft
+
 "@babel/code-frame@npm:^7.26.2, @babel/code-frame@npm:^7.27.1":
   version: 7.27.1
   resolution: "@babel/code-frame@npm:7.27.1"
@@ -5876,49 +5919,6 @@ __metadata:
   checksum: 58ee9538f2f762988433da00e26acc788036914d57c71c246bf0be1b60cdbd77dd60b6a3e1a30465f0b248aeb80079e0b34cb6050b1dfa18c06953bb1cbc7602
   languageName: node
   linkType: hard
-
-"package-ops@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "package-ops@workspace:."
-  dependencies:
-    "@babel/core": ^7.28.0
-    "@babel/eslint-parser": ^7.28.0
-    "@release-it/conventional-changelog": ^10.0.1
-    "@swc/cli": ^0.7.7
-    "@swc/core": ^1.12.9
-    "@swc/register": 0.1.10
-    app-module-path: ^2.1.0
-    bdd-lazy-var: ^2.6.1
-    chai: ^4.3.6
-    chai-as-promised: ^7.1.1
-    eslint: ^8.57.0
-    eslint-config-nicenice: ^4.1.1
-    eslint-config-prettier: ^9.1.0
-    eslint-config-standard: ^17.1.0
-    eslint-config-standard-jsx: ^11.0.0
-    eslint-import-resolver-alias: ^1.1.2
-    eslint-plugin-import: ^2.29.1
-    eslint-plugin-mocha: ^10.4.1
-    eslint-plugin-n: ^16.6.2
-    eslint-plugin-no-only-tests: ^3.1.0
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-prettier: ^5.1.3
-    eslint-plugin-promise: ^6.1.1
-    eslint-plugin-react: 7.37.5
-    eslint-plugin-svg-jsx: ^1.2.4
-    husky: ^9.1.7
-    lint-staged: ^16.1.2
-    lodash: ^4.17.21
-    mocha: ^9.2.2
-    prettier: ^3.2.5
-    release-it: ^19.0.3
-    rimraf: ^6.0.1
-    sinon: ^12.0.1
-    sinon-chai: ^3.5.0
-  bin:
-    release: ./scripts/release.js
-  languageName: unknown
-  linkType: soft
 
 "parent-module@npm:^1.0.0":
   version: 1.0.1
