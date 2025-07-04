@@ -1,5 +1,5 @@
 {
-  "name": "package-ops",
+  "name": "@anvilco-pkg/package-ops",
   "version": "0.0.0",
   "description": "Set up a new Node package with all the goodies and ready to be exported/imported to any project.",
   "repository": "git@github.com:fostimus/package-ops.git",
